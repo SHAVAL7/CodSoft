@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* header */
+.header{
+    padding:50px;
+    background:linear-gradient(to right,rgb(36, 36, 65),rgb(75, 75, 118),silver) ;
+    color:aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.headerp{
+    margin-top: 30px;
+}
+.headertop{
+    display: flex;
+    justify-content: space-between;
+}
+.header ul{
+    list-style-type:none;
+}
+.headernav{
+    display: flex;
+    gap:40px;
+}
+.headernav a{
+    text-decoration: none;
+    color:aliceblue
+}
+.headernav a:hover{
+    text-decoration: underline;
+    color:aliceblue;
+}
+.headerbutton{
+    padding-top: 10px;
+}
+
+.sidenavbar{
+    display: none;
+}
+/* sidenav */
+.sidenav{
+    background-color: rgb(36,36,65);
+    width:30%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:20px;
+    color:whitesmoke;
+    display:none ;
+    transition: 2s;
+    z-index: 2;
+}
+.sidebutton{
+    font-size: 20px;
+    text-align: left;
+    margin-top:50px;
+    margin-bottom: 60px;
+}
+.sidebutton a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.sidebutton a:hover{
+    text-decoration: underline;
+}
+
+/* about */
+.about{
+    background-color:rgb(229, 227, 227);
+    /* background-color:rgb(229, 227, 227); */
+}
+.about img{
+    border: none;
+    height: 450px;
+    width: 400px;
+}
+.aboutcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutcontainer li{
+    list-style-type: none;
+}
+.aboutcontainer div{
+    padding-top: 10%;
+    /* padding: 50px; */
+    /* padding-right: 50px; */
+}
+
+/* 0d1b2a 1b263b 415a77 778da9 e0e1dd */
+/* major */
+.major{
+    height: 900px;
+}
+.major-top{
+    display: flex;
+    justify-content: space-around;
+    border: transparent;
+    color:aliceblue;
+    text-align: center;
+    height: 450px;
+}
+.major-bottom{
+    display:flex;
+    justify-content: space-around;
+    border: transparent;
+    color: aliceblue;
+    text-align: center;
+    height:450px;
+}
+.major a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.mskill{
+    position: relative;
+    padding-top: 12%;
+    background:linear-gradient(to right,rgb(36, 36, 65),rgb(75, 75, 118)) ;
+    width:50%;
+    transition: 1s;
+    border:transparent;
+}
+.mresume{
+    padding-top: 12%;
+    background:linear-gradient(to right,rgb(75, 75, 118),silver) ;
+    width:50%;
+    transition: 1s;
+}
+.mproject{
+    position: relative;
+    padding-top: 12%;
+    background:linear-gradient(to left,rgb(75, 75, 118),silver) ;
+    width:50%;
+    transition: 1s;
+}
+.mcontact{
+    padding-top: 12%;
+    background:linear-gradient(to left,rgb(36, 36, 65),rgb(75, 75, 118)) ;
+    width:50%;
+    transition: 1s;
+}
+
+/* footer */
+.footer{
+    padding-left:55px ;
+    text-align: left;
+    background:rgb(40, 40, 63);
+    color: aliceblue;
+}
+.iconloc{
+    display: flex;
+    gap:5px
+}
+.footer h3{
+    padding-top: 20px;
+}
+.footer h4{
+    padding-top: 20px;
+}
+.footer-icon{
+    padding-top: 20px;
+    display: flex;
+    gap:10px;
+}
+.footer i{
+    color: aliceblue;
+    font-size: 20px;
+}
+.footer i:hover{
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+/* media query */
+@media screen and (max-width:700px){
+    .sidenavbar{
+        display: block;
+    }
+    .headernav{
+        display: none;
+    }
+    .sidenav{
+        display: none;
+    }
+}
+
+
+/* skill bars */
+.skill h1{
+    text-align: center;
+}
+.skill h3{
+    margin:10px;
+}
+
+.m1skill{ 
+    display: none;
+    background:linear-gradient(to right,rgb(36, 36, 65),rgb(75, 75, 118)) ;
+    position: absolute;
+    width:400px;
+    left:25%;
+    top:10%;
+    color:aliceblue;
+    padding:20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.skill li{
+    margin:20px 0;
+    padding: 10px;
+}
+.bar{
+    background-color: whitesmoke;
+    display: block;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3% cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.bar span{
+    height: 20px;
+    float:left;
+    background: linear-gradient(to right,rgb(36, 36, 65),rgb(75, 75, 118));
+}
+.html{
+    width:70%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.js{
+    width: 70%;
+    animation: js 3s;
+}
+.java{
+    width: 60%;
+    animation: java 3s;
+}
+.sql{
+    width: 50%;
+    animation: sql 3s;
+}
+.react{
+    width: 40%;
+    animation: react 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}@keyframes js{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}@keyframes react{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+/* proj link */
+.mprojects{
+    display: none;
+    background:linear-gradient(to left,rgb(75, 75, 118),silver) ;
+    position: absolute;
+    width:400px;
+    left:25%;
+    top:20%;
+    color:aliceblue;
+    padding:20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.mprojects h3{
+    padding-top: 20px;
+}
+
+/* resume */
+.resumepage img{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 800px;
+    width: 600px;
+}
+
+/* contact */
+.contact{
+    color: aliceblue;
+    background:rgb(40, 40, 63);
+    padding: 50px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.ccontainer{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 9%;
+}
+.cpic{
+    border: solid 2px silver;
+    position: absolute;
+    right:9%;
+    top:50%;
+    border-radius: 10px;
+    z-index: 1;
+}
+.cpic img{
+    border-radius: 10px;
+}
+
+.cbdr{
+    border: solid 2px silver;
+}
+.cdetails div{
+    border: solid 2px silver;
+    padding: 50px;
+}
+.cdetails{
+    display: flex;
+}
+.cdetails a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.cdetails a:hover{
+    text-decoration: underline;
+}
